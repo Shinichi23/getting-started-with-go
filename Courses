@@ -1,0 +1,19 @@
+Convert Type exp : int 16 to int 32
+var x int32 = 1
+var y int16 = 2
+
+x = y  => false
+x = int32(y)
+
+Iota
+exemple:
+
+type Grades int
+const  (
+	A Grades = iota
+	B
+	C
+	D
+	E
+	F
+)
